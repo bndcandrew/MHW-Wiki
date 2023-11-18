@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    background: url(images/monsterbg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(34, 34, 34);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+#searchBar {
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+
+  #searchInput {
+    padding: 4px;
+    margin-right: 5px;
+    margin-left: 70px;
+  }
+
+  #searchButton {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-logo {
+    max-height: 80px;
+    margin-left: 50px;
+}
+
+.navbar-link {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+    overflow: hidden;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0px;
+}
+
+.nav-item {
+    margin-right: 0px;
+  }
+  
+
+.navbar a {
+    text-decoration: none;
+    color: #e0d3d8; 
+    padding-left: 30px;
+    margin-left: 40px;
+    font-weight: bold; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color:#d1064f
+}
+
+
+.title-logo {
+    width: 20%;
+    margin-top: 90px;
+    margin-left: 10%;
+}
+
+
+.container{
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.767);
+    padding: 50px;
+    padding-top: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    color: white;
+}
+.container-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 30%;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: left;
+    border-bottom: solid;
+    font-family: "Audiowide", sans-serif ;
+    font-weight: 500;
+}
+.p-about {
+    font-size: 20px;
+    margin: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    padding-top: 30px;
+    font-family: "Marcellus";
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h3 {
+    font-size: 25px;
+    text-align: left;
+    font-family: "Audiowide", sans-serif ;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 500;
+    
+}
+
+
+.row,
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+.left-col,
+.middle-col,
+.right-col {
+    width: 30%; 
+    padding: 20px;
+    margin: 10px; 
+}
+
+
+.left-col-row,
+.middle-left,
+.middle-right,
+.right-col{
+    vertical-align: middle;
+    background-size: cover;
+    width: 30%; 
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 20px; 
+}
+.button {
+    height: 60px; /* Set a fixed height for your buttons */
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.left-col-row a,
+.middle-left a,
+.middle-right a,
+.right-col a{
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: Papyrus;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 40px;
+    font-weight: 900;
+    -webkit-text-stroke: 1.5px #ffffff;
+}
+
+.left-col-row a:hover,
+.middle-left a:hover,
+.middle-right a:hover,
+.right-col a:hover {
+    color: #d1064f; 
+    -webkit-text-stroke: 1.5px #d1064f;
+}
+
+
+
+.icon {
+    width: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.nav-pic {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.p-row {
+    font-size: 20px;
+    text-align: left;
+    font-family: "Marcellus";
+}
+
+
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    color:rgb(46, 46, 46);
+  }
+
+  #ailmentsSection,
+  #monstersSection,
+  #armorSection,
+  #weaponsSection {
+      display: none;
+  }
+  
+
+  .pageLink {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+
+
+#ailmentsSection,
+#monstersSection,
+#armorSection,
+#weaponsSection {
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    background: url(images/monsterbg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+.pageLink {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

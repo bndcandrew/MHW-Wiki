@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css">
+  <title>Monster Hunter World</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="title-link"><img src="images/Monster-Hunter-Symbol-removebg-preview.png" class="header-logo"></a>
+              
+      <div class="navbar-link">      
+        <ul class="nav-link">
+          <li class="nav-item">
+            <a href="ailment.html" onclick="showSection('ailments')"><img src="images/para.png" class="nav-pic" >Ailment</a>
+          </li>
+          <li class="nav-item">
+            <a href="monsters.html" onclick="showSection('monsters')"><img src="images/monster.png" class="nav-pic" >Monsters</a>
+          </li>
+          <li class="nav-item">
+            <a href="armor.html" onclick="showSection('armor')"><img src="images/armor.png" class="nav-pic" >Armor</a>
+          </li>
+          <li class="nav-item">
+            <a href="weapons.html" onclick="showSection('weapons')"><img src="images/weapon.png" class="nav-pic" >Weapons</a>
+          </li> 
+          <li class="nav-item">
+            <input type="text" id="searchInput" onkeypress="handleKeyPress(event)" placeholder="Search..."/>
+            <button id="searchButton" onclick="handleSearch()">Search</button>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <div id="ailmentsSection" class="section" style="display: none"></div>
+  <div id="monstersSection" class="section" style="display: none"></div>
+  <div id="armorSection" class="section" style="display: none"></div>
+  <div id="weaponsSection" class="section" style="display: none"></div>
+
+  <script src="script.js"></script>
+  <script>
+    window.onload = function () {
+      showSection("monsters");
+    };
+  </script>
+</body>
+
+</html>
